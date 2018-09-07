@@ -1,0 +1,7 @@
+{
+  "name": "mediaStreaming",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
