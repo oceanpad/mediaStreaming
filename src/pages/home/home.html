@@ -7,8 +7,7 @@
 </ion-header>
  
 <ion-content padding>
-  <!-- <button ion-button full (click)="startVideo()">Start Video</button>
-  <button ion-button full (click)="startAudio()">Start Audio</button> -->
-  <!-- <button ion-button full (click)="stopAudio()" color="danger">Stop Audio</button> -->
-  <img src="http://192.168.1.140:5000/video_feed"/>
+  <img src="{{newVideoUrl}}"/>
+  <ion-input type="text" [(ngModel)]="videoUrl" placeholder="Please input camera IP address">192.168.1.140:5000</ion-input>
+  <button ion-button full (click)="setVideoUrl()" value="{{videoUrl}}">Set Video Link</button>
 </ion-content>
